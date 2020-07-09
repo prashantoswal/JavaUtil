@@ -11,4 +11,7 @@ public class App
         System.out.println( "Hello World!" );
         System.out.println("Merge");
     }
+    public void sayHello() {
+    	System.out.println("Hello");
+    }
 }
