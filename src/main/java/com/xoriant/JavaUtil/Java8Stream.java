@@ -13,6 +13,8 @@ public class Java8Stream {
 		names = names.stream().filter(name->name.equalsIgnoreCase("Prashant") || name.equalsIgnoreCase("Manoj")).collect(Collectors.toList());
 		
 		System.out.println(names);
+		
+		names.stream().collect(Collectors.groupingBy(name->name.toString()));
 	}
 
 }
