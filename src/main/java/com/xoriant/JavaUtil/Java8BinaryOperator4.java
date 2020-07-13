@@ -15,12 +15,18 @@ public class Java8BinaryOperator4 {
 
     public static void main(String[] args) {
 
-        Developer dev1 = new Developer("jordan", BigDecimal.valueOf(9999));
+        Developer dev1 = new Developer("1jordan", BigDecimal.valueOf(9999));
+        Developer dev2 = new Developer("jack", BigDecimal.valueOf(8888));
+        Developer dev3 = new Developer("jaden", BigDecimal.valueOf(10000));
+        Developer dev2 = new Developer("jack", BigDecimal.valueOf(8888));
+        Developer dev3 = new Developer("jaden1", BigDecimal.valueOf(10000));
         Developer dev2 = new Developer("jack1", BigDecimal.valueOf(8888));
         Developer dev3 = new Developer("jaden2", BigDecimal.valueOf(10000));
         Developer dev4 = new Developer("ali", BigDecimal.valueOf(2000));
         Developer dev5 = new Developer("mkyong", BigDecimal.valueOf(1));
         Developer dev6 = new Developer("Prasahnt", BigDecimal.valueOf(10000));
+        Developer dev7 = new Developer("John", BigDecimal.valueOf(10000));
+
 
 
         List<Developer> list = Arrays.asList(dev1, dev2, dev3, dev4, dev5,dev6);
