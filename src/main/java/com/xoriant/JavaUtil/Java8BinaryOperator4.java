@@ -26,7 +26,7 @@ public class Java8BinaryOperator4 {
         List<Developer> list = Arrays.asList(dev1, dev2, dev3, dev4, dev5,dev6);
         
         
-       Map<BigDecimal,List<Developer>> groupBySalary = list.stream().collect(Collectors.groupingBy(Developer::getSalary));
+       Map<BigDecimal,List<Developer>> groupBySalary = list.stream().collect(Collectors.groupingBy(t -> t.getSalary()));
        
        System.out.println(groupBySalary);
         
