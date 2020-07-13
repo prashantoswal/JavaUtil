@@ -2,6 +2,7 @@ package com.xoriant.JavaUtil;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Java8Stream {
@@ -14,7 +15,7 @@ public class Java8Stream {
 		
 		System.out.println(names);
 		
-		names.stream().collect(Collectors.groupingBy(name->name.toString()));
+		Map<Integer,List<String>> count = names.stream().collect(Collectors.groupingBy(t -> t.length()));
 	}
 
 }
